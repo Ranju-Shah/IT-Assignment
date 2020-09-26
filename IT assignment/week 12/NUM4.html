@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>To change the background color of a paragraph</title>
+</head>
+<body>
+	<input type="button" value="Tap to change the background color of the paragraph" onclick="set_background()">
+	<p> Software engineering is a branch of computer science which includes the development and building of computer systems software and applications software. Computer systems software is composed of programs that include computing utilities and operations systems.</p>
+	<script type="text/javascript">
+ 		function set_background() 
+ 		{
+ 		docBody = document.getElementsByTagName("body")[0];
+  		myBodyElements = docBody.getElementsByTagName("p");
+  		myp1 = myBodyElements[0];
+  		myp1.style.background = "orange";
+		}
+	</script>
+</body>
+</html>
